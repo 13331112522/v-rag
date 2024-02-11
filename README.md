@@ -1,6 +1,5 @@
-# v-rag
-Visual RAG using less than 300 lines of code.
-#Visual RAG
+
+# <center> **Visual RAG** </center>
 
 Build your own **Visual RAG** Application using less than 300 lines of code.
 
