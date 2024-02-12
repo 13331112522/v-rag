@@ -33,7 +33,8 @@ Build your own **Visual RAG** Application using less than 300 lines of code.
       ```
     
     - **Get ready for models**
-        - Put local LLM weights into model, supporting any GGUF format, and change the MODEL_PATH in .env for your model path.
+        - Put local LLM weights into folder _models_, supporting any GGUF format, and change the MODEL_PATH in .env for your model path. You can download the weights by visiting [Huggingface/theBloke](https://huggingface.co/TheBloke). We use [mistral-7b-instruct-v0.1.Q4_K_S.gguf](https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF) as our LLM for query.
+        - We currently employed the HuggingfaceEmbedding, but you can change it to local embedding like GPT4ALLEmbedding by changing the EMBEDDINGS_MODEL_NAME in .env.
         - Run MLLM. We employ the latest llava 1.6 for image and video parsing.
         
         ```bash
@@ -42,16 +43,16 @@ Build your own **Visual RAG** Application using less than 300 lines of code.
         
     - **Run**
         
-        Path refers to the folder which contains all the images and videos you want to retrieve, and stride refers to the frame interval for video parse.
+        Path refers to the folder which contains all the images and videos you want to retrieve, and stride refers to the frame interval for video parse. For long video parse, you can change _stride_ to big number for higher process speed but less details.
         
         ```bash
         python v-rag.py --path ./source --stride 25
         ```
-        
+        It will generate the folder _source_documents_ as the storage of parsed text and _faiss_index_ as the vectorDB. If the two folders already exist, it will start query directly.
 * **To-do List**
     - WebUI
     - JSON support rather than txt
-    - [Video](http://3.video) playback with the query result.
+    - Video playback with the query result.
     - Evaluation on open Dataset
     - MultiModal RAG
     - Docker support
