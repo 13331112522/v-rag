@@ -2,9 +2,11 @@
 # <center> **Visual RAG** </center>
 
 Build your own **Visual RAG** Application using less than 300 lines of code.
+
 You can talk to your visual documents with LLM.
-<img src='pics/parse.png' width='40%'>
-<img src='pics/query.png' width='40%' align='right'>
+
+<img src='pics/parse.png' width='40%' align='center'>
+<img src='pics/query.png' width='40%' align='center'>
 
 
 * **Features**
