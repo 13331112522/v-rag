@@ -58,12 +58,12 @@ You can talk to your visual documents with LLM.
         ```
         It will generate the folder _source_documents_ as the storage of parsed text and _faiss_index_ as the vectorDB. If the two folders already exist, it will start query directly.
 * **To-do List**
-    - WebUI
-    - JSON support rather than txt
-    - Video playback with the query result.
-    - Evaluation on open Dataset
-    - MultiModal RAG
-    - Docker support
+    -[] WebUI
+    -[] JSON support rather than txt
+    -[] Video playback with the query result.
+    -[] Evaluation on open Dataset
+    -[] MultiModal RAG
+    -[] Docker support
 * **Acknowledgement**
     - llava 1.6
     - PrivateGPT
