@@ -187,7 +187,7 @@ def main():
         print(f"Creating embeddings. May take some minutes...")
         db = FAISS.from_documents(texts, embeddings)
         db.save_local("faiss_index")
-        print(f"Ingestion complete! You can now run privateGPT.py to query your documents")
+        print(f"Ingestion complete! You can now query your visual documents")
 
     #loading the vectorstore
     db=FAISS.load_local("faiss_index", embeddings)
