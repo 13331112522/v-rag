@@ -44,7 +44,11 @@ You can talk to your visual documents with LLM.
         ```bash
         ollama run llava
         ```
-        
+    - **Environment variables setting**
+      
+        - Change the environment variables according to your needs in .env.
+        - Replace with the actual path to your FFmpeg executable in _os.environ["IMAGEIO_FFMPEG_EXE"] = "/path/to/ffmpeg"_ to leverage the FFmpeg backend.
+  
     - **Run**
         
         Path refers to the folder which contains all the images and videos you want to retrieve, and stride refers to the frame interval for video parse. For long video parse, you can change _stride_ to big number for higher process speed but less details.
