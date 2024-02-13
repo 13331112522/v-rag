@@ -3,7 +3,8 @@
 
 Build your own **Visual RAG** Application using less than 300 lines of code.
 
-<img src='pics/parse.png' width='60%' align='left'>
+<img src='pics/parse.png' width='40%'>
+<img src='pics/query.png' width='40%'>
 
 
 * **Features**
