@@ -32,7 +32,8 @@ model_path = os.environ.get('MODEL_PATH')
 model_n_ctx = os.environ.get('MODEL_N_CTX')
 model_n_batch = int(os.environ.get('MODEL_N_BATCH',8))
 target_source_chunks = int(os.environ.get('TARGET_SOURCE_CHUNKS',4))
-os.environ["IMAGEIO_FFMPEG_EXE"] = "/users/zhouql1978/dev/realtime-bakllava/ffmpeg"
+# Replace with the actual path to your FFmpeg executable
+os.environ["IMAGEIO_FFMPEG_EXE"] = "/path/to/ffmpeg"
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--path', required=True, help='Folder to the images and videos file')
