@@ -3,7 +3,8 @@
 
 Build your own **Visual RAG** Application using less than 300 lines of code.
 
-<demo>
+`![Parsing the images and videos](pics/parse.png)`
+`![Q&A about visual documents](pics/query.png)`
 
 * **Features**
     - Ingest your videos and pictures  with Multimodal LLM
