@@ -14,7 +14,7 @@ You can talk to your visual documents with LLM.
     - Q&A with LLM about your visual files
     - Run locally without compromising your privacy
     - Locating the relevant resource with quotation
-    - Extremely simple with only one file with less 200 lines of code
+    - Extremely simple with only one python file with no more than 240 lines of code
 * **Process**
     - Parse videos or pictures in the folder into text with LLava, which run locally with ollama
     - Ingest the text into vectorDB
@@ -51,11 +51,13 @@ You can talk to your visual documents with LLM.
   
     - **Run**
         
-        Path refers to the folder which contains all the images and videos you want to retrieve, and stride refers to the frame interval for video parse. For long video parse, you can change _stride_ to big number for higher process speed but less details.
+        Put all the images and videos you want to talk with into the folder _source_. Run following command:
         
         ```bash
         python v-rag.py --path ./source --stride 25
         ```
+        Path refers to the folder which contains all the images and videos you want to retrieve, and stride refers to the frame interval for video parse. For long video parse, you can change _stride_ to big number for higher process speed but less details.
+      
         It will generate the folder _source_documents_ as the storage of parsed text and _faiss_index_ as the vectorDB. If the two folders already exist, it will start query directly.
 * **To-do List**
     - [ ] WebUI
