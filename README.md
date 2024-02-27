@@ -8,7 +8,15 @@ You can talk to your visual documents with LLM.
 <img src='pics/parse.png' width='40%' align='center'>
 <img src='pics/query.png' width='40%' align='center'>
 
+* **Updates**
+    - [Multimodal-RAG](https://github.com/13331112522/m-rag) to support Word, PPT, CSV, PDF, Email, HTML, Evernote, Video and image. 
 
+    - Video search with Qwen-VL to parse the video and Qwen-Tongyi to do RAG. Nomic Embedding supported and Chinese supported.
+        Super easy to run:
+        ```bash
+        python video_search_qwen.py --path YOUR_VIDEO_PATH.mp4 --stride 25
+        ```
+        Stride refers to the frame interval for video parse. For long video parse, you can change _stride_ to big number for higher process speed but less details.
 * **Features**
     - Ingest your videos and pictures  with Multimodal LLM
     - Q&A with LLM about your visual files
@@ -64,7 +72,7 @@ You can talk to your visual documents with LLM.
     - [ ] JSON support rather than txt
     - [ ] Video playback with the query result.
     - [ ] Evaluation on open Dataset
-    - [ ] MultiModal RAG
+    - [x] MultiModal RAG
     - [ ] Docker support
 * **Acknowledgement**
     - llava 1.6
