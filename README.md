@@ -9,6 +9,13 @@ You can talk to your visual documents with LLM.
 <img src='pics/query.png' width='40%' align='center'>
 
 * **Updates**
+    - Video search with Chinese and multi-model support, Llava, Zhipu-GLM4V and Qwen.
+    
+        ```bash
+        python video_search_zh.py --path YOUR_VIDEO_PATH.mp4 --stride 25 --lvm MODEL_NAME
+        ```
+        _lvm_  refers to the model we support, could be Zhipu or Qwen, llava by default.
+
     - [Multimodal-RAG](https://github.com/13331112522/m-rag) to support Word, PPT, CSV, PDF, Email, HTML, Evernote, Video and image. 
 
     - Video search with Qwen-VL to parse the video and Qwen-Tongyi to do RAG. Nomic Embedding supported and Chinese supported.
@@ -67,6 +74,14 @@ You can talk to your visual documents with LLM.
         Path refers to the folder which contains all the images and videos you want to retrieve, and stride refers to the frame interval for video parse. For long video parse, you can change _stride_ to big number for higher process speed but less details.
       
         It will generate the folder _source_documents_ as the storage of parsed text and _faiss_index_ as the vectorDB. If the two folders already exist, it will start query directly.
+* **Discussion**
+    - Low parsing speed.
+    - Hallucination.
+    - Safety constraint
+    - Examples for parsed text:
+    <img src='pics/qwen.png' width='40%' align='center'>
+    <img src='pics/zhipu.png' width='40%' align='center'>
+    <img src='pics/llava.png' width='40%' align='center'>
 * **To-do List**
     - [ ] WebUI
     - [ ] JSON support rather than txt
