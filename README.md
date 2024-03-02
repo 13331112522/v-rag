@@ -80,7 +80,7 @@ You can talk to your visual documents with LLM.
     - Safety constraint
     - Examples for parsed text:
     <img src='pics/qwen.png' width='40%' align='center'>
-    <img src='pics/zhipu.png' width='40%' align='center'>
+    <img src='pics/glm4v.png' width='40%' align='center'>
     <img src='pics/llava.png' width='40%' align='center'>
 * **To-do List**
     - [ ] WebUI
